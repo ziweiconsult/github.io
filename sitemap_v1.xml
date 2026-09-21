@@ -5,15 +5,15 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://anumetaphysics.com.myindex_en.html</loc>
+    <loc>https://anumetaphysics.com.my/index_en.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://anumetaphysics.com.myfaq_ch.html</loc>
+    <loc>https://anumetaphysics.com.my/faq_ch.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://anumetaphysics.com.myfaq_en.html</loc>
+    <loc>https://anumetaphysics.com.my/faq_en.html</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
