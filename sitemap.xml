@@ -1,78 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://sitemaps.org"
-        xmlns:xhtml="http://w3.org">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- ==================== 1. 首页 (中/英文对齐) ==================== -->
-  <!-- 首页 (中文) -->
+  <!-- 首页 -->
   <url>
     <loc>https://anumetaphysics.com.my</loc>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/index_en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my"/>
-    <priority>1.0</priority>
   </url>
-
-  <!-- 首页 (英文) -->
   <url>
     <loc>https://anumetaphysics.com.my/index_en.html</loc>
-    <xhtml:link rel="alternate" rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/index_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/index_en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my"/>
-    <priority>0.9</priority>
   </url>
 
-
-  <!-- ==================== 2. 关于我们 (中/英文对齐) ==================== -->
-  <!-- 关于我们 (中文) -->
+  <!-- 关于安猷 -->
   <url>
-    <loc>https://anumetaphysics.com.my</loc>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my"/>
-    <priority>0.8</priority>
+    <loc>https://anumetaphysics.com.my/about_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/about_cn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/about_en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/about_cn.html"/>
+  </url>
+  <url>
+    <loc>https://anumetaphysics.com.my/about_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/about_cn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/about_en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/about_cn.html"/>
   </url>
 
-  <!-- 关于我们 (英文) -->
+  <!-- 课程 -->
   <url>
-    <loc>https://anumetaphysics.com.my</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my"/>
-    <priority>0.8</priority>
+    <loc>https://anumetaphysics.com.my/courses_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/courses_cn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/courses_en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/courses_cn.html"/>
+  </url>
+  <url>
+    <loc>https://anumetaphysics.com.my/courses_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/courses_cn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/courses_en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/courses_cn.html"/>
   </url>
 
-
-  <!-- ==================== 3. 课程介绍 (中/英文对齐) ==================== -->
-  <!-- 课程介绍 (中文) -->
+  <!-- 常见问题 -->
   <url>
-    <loc>https://anumetaphysics.com.my</loc>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my"/>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- 课程介绍 (英文) -->
-  <url>
-    <loc>https://anumetaphysics.com.my</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my"/>
-    <priority>0.8</priority>
-  </url>
-
-
-  <!-- ==================== 4. 常见问题 (中/英文对齐) ==================== -->
-  <!-- 常见问题 (中文) -->
-  <url>
-    <loc>https://anumetaphysics.com.my/faq_ch.html</loc>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my/faq_ch.html"/>
+    <loc>https://anumetaphysics.com.my/faq_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/faq_cn.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/faq_en.html"/>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/faq_cn.html"/>
   </url>
-
-  <!-- 常见问题 (英文) -->
   <url>
     <loc>https://anumetaphysics.com.my/faq_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/faq_cn.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/faq_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://anumetaphysics.com.my/faq_ch.html"/>
-    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/faq_cn.html"/>
   </url>
 
 </urlset>
