@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<title>[预览·紫金] 玄学咨询常见问题解答 | 阳宅风水与论命择日指南 - 安猷 A&U</title>
+<meta name="description" content="紫微斗数常见疑问：命理的科学性、排盘、改运、感情、事业、风水。十问十答，以及课堂与咨询中逐一拆解的题库。">
+<meta name="theme-color" content="#F2EBD9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=Spectral:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+ 
+<style>
+
+:root{
+  --paper:#F7F2E6;
+  --paper-2:#F1E9D7;
+  --paper-3:#EAE0C9;
+  --ink:#2B2519;
+  --ink-2:#4A4234;
+  --muted:#7A7059;
+  --line:rgba(43,37,25,.18);
+  --line-soft:rgba(43,37,25,.10);
+  --zi:#4C3A6E;
+  --zhu:#A63A2C;
+  --lu:#3F7A5E;
+  --quan:#A63A2C;
+  --ke:#3D5A93;
+  --ji:#6A5F7E;
+  --serif:"Noto Serif SC","Songti SC","Source Han Serif SC",serif;
+  --sans:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  --lat:"Spectral",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--sans);font-weight:400;line-height:1.85;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  background-image:
+    radial-gradient(58rem 40rem at 82% -6%, rgba(76,58,110,.09), transparent 62%),
+    radial-gradient(46rem 34rem at 2% 30%, rgba(166,58,44,.06), transparent 60%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 22px;position:relative;z-index:1}
+
+/* ── 十四主星水印 ── */
+.stars{
+  position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden;
+  display:flex;justify-content:space-between;align-items:flex-start;
+  padding:1vh 0;opacity:.05;
+}
+.stars span{
+  writing-mode:vertical-rl;font-family:var(--serif);font-weight:900;
+  font-size:clamp(58px,8.6vw,124px);letter-spacing:.3em;color:var(--zi);
+  white-space:nowrap;line-height:1;
+}
+.stars span:nth-child(even){margin-top:9vh}
+.stars span:nth-child(3n){color:var(--zhu)}
+@media(max-width:900px){
+  .stars span:nth-child(n+5){display:none}
+  .stars{opacity:.045}
+}
+
+/* ── 顶栏 ── */
+.bar{
+  position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);
+  background:rgba(247,242,230,.88);border-bottom:1px solid var(--line-soft);
+}
+.bar .wrap{display:flex;align-items:center;gap:14px;height:60px}
+.bar .name{font-family:var(--serif);font-weight:700;font-size:15.5px;letter-spacing:.08em;white-space:nowrap}
+.bar nav{margin-left:auto;display:flex;gap:24px}
+.bar nav a{font-size:14px;font-weight:500;color:var(--ink-2);text-decoration:none;transition:color .2s}
+.bar nav a:hover{color:var(--zhu)}
+.lang{
+  font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.1em;
+  border:1px solid var(--line);background:transparent;color:var(--zi);
+  padding:7px 14px;border-radius:999px;cursor:pointer;transition:.2s;flex:0 0 auto;
+}
+.lang:hover{background:var(--paper-3)}
+@media(max-width:880px){.bar nav{display:none}.bar .wrap{gap:10px}.lang{margin-left:auto}}
+
+/* ── LOGO 区 ── */
+.logos{
+  display:flex;align-items:center;justify-content:center;gap:clamp(18px,5vw,54px);
+  padding:44px 0 30px;flex-wrap:wrap;
+}
+.logo-slot{display:flex;flex-direction:column;align-items:center;gap:9px}
+.logo-slot img{
+  height:clamp(84px,12.5vw,118px);width:auto;max-width:100%;object-fit:contain;
+  filter:drop-shadow(0 3px 7px rgba(43,37,25,.12));
+}
+.logo-slot figcaption{
+  font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.2em;
+  color:var(--muted);text-transform:uppercase;
+}
+.logo-div{width:1px;align-self:stretch;background:var(--line);margin:8px 0}
+@media(max-width:520px){.logo-div{display:none}.logos{gap:24px}}
+
+/* ── 十二宫 ── */
+.hero{padding:0 0 26px}
+.eyebrow{
+  font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.32em;
+  text-transform:uppercase;color:var(--zhu);margin:0 0 16px;text-align:center;
+}
+.chart{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;
+  box-shadow:0 10px 40px -22px rgba(43,37,25,.5);
+}
+.cell{
+  background:var(--paper-2);padding:15px 13px;min-height:116px;
+  display:flex;flex-direction:column;justify-content:space-between;transition:background .3s;
+}
+.cell:hover{background:var(--paper-3)}
+.cell .zhi{font-family:var(--mono);font-weight:600;font-size:10.5px;color:var(--muted);letter-spacing:.16em}
+.cell .gong{font-family:var(--serif);font-weight:700;font-size:17.5px;letter-spacing:.05em;margin-top:auto}
+.cell .topic{font-size:12.5px;font-weight:500;color:var(--muted);letter-spacing:.03em}
+.core{
+  grid-column:2 / span 2;grid-row:2 / span 2;background:var(--paper);
+  padding:30px 24px;display:flex;flex-direction:column;justify-content:center;text-align:center;
+}
+.core h1,.core h2{font-family:var(--serif);font-weight:900;font-size:clamp(30px,4.6vw,44px);margin:0;letter-spacing:.04em;line-height:1.25}
+.core .lat{font-family:var(--lat);font-style:italic;font-weight:600;color:var(--zhu);font-size:15px;margin:8px 0 0;letter-spacing:.04em}
+.core .role{font-size:14px;font-weight:500;color:var(--ink-2);margin:14px 0 0;line-height:1.75}
+.core .since{
+  margin-top:15px;font-family:var(--mono);font-weight:600;font-size:11px;color:var(--zi);
+  letter-spacing:.18em;border-top:1px solid var(--line);padding-top:13px;
+}
+@media(max-width:760px){
+  .chart{grid-template-columns:repeat(2,1fr)}
+  .core{grid-column:1 / -1;grid-row:auto;order:-1;padding:30px 18px}
+  .cell{min-height:94px;padding:12px 11px}
+}
+
+.sihua{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 0;justify-content:center}
+.sihua div{
+  font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.14em;color:var(--ink-2);
+  border:1px solid var(--line);border-radius:999px;padding:6px 14px;display:flex;align-items:center;gap:8px;
+}
+.dot{width:7px;height:7px;border-radius:50%}
+.d-lu{background:var(--lu)}.d-quan{background:var(--quan)}.d-ke{background:var(--ke)}.d-ji{background:var(--ji)}
+
+/* ── 区块 ── */
+section{padding:78px 0;border-top:1px solid var(--line-soft)}
+.head{display:flex;align-items:baseline;gap:15px;margin-bottom:34px;flex-wrap:wrap}
+.head .idx{
+  font-family:var(--serif);font-weight:700;font-size:14px;letter-spacing:.1em;color:var(--paper);
+  background:var(--zi);border-radius:3px;padding:3px 10px;
+}
+.head h2{font-family:var(--serif);font-weight:900;font-size:clamp(24px,3.4vw,32px);margin:0;letter-spacing:.04em}
+.head .en{font-family:var(--lat);font-style:italic;font-weight:500;color:var(--muted);font-size:15px}
+.lead{font-size:15.5px;font-weight:500;color:var(--ink-2);max-width:64ch;margin:0 0 32px}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+@media(max-width:880px){.grid3,.grid2{grid-template-columns:1fr}}
+
+.card{
+  background:rgba(255,255,255,.5);border:1px solid var(--line);border-radius:5px;
+  padding:24px 22px;position:relative;
+}
+.card::before{content:"";position:absolute;left:0;top:0;width:3px;height:46px;background:var(--zi)}
+.card.lu::before{background:var(--lu)}.card.quan::before{background:var(--quan)}
+.card.ke::before{background:var(--ke)}.card.ji::before{background:var(--ji)}
+.card h3{font-family:var(--serif);font-weight:700;font-size:18.5px;margin:0 0 10px;letter-spacing:.04em}
+.card p{margin:0;font-size:14.5px;font-weight:400;color:var(--ink-2);line-height:1.85}
+
+/* 关于 */
+.about{display:grid;grid-template-columns:290px 1fr;gap:42px;align-items:start}
+@media(max-width:880px){.about{grid-template-columns:1fr;gap:26px}}
+.portrait{border:1px dashed var(--line);border-radius:5px;padding:9px;background:rgba(255,255,255,.42);margin:0}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:3px;background:var(--paper-3)}
+.portrait figcaption{font-family:var(--mono);font-weight:500;font-size:10px;color:var(--muted);letter-spacing:.18em;text-align:center;padding-top:9px}
+.about p{font-size:16px;margin:0 0 18px}
+.about p strong{color:var(--zhu);font-weight:700}
+
+/* 课程 */
+.course{border:1px solid var(--line);border-radius:5px;overflow:hidden;background:rgba(255,255,255,.44);display:flex;flex-direction:column}
+.course .top{padding:26px 24px 22px;border-bottom:1px solid var(--line);background:var(--paper-2)}
+.course .tag{font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:.2em;color:var(--zhu);text-transform:uppercase}
+.course h3{font-family:var(--serif);font-weight:900;font-size:26px;margin:9px 0 4px;letter-spacing:.05em}
+.course .sub{font-family:var(--lat);font-style:italic;font-weight:500;color:var(--muted);font-size:14px;margin:0}
+.price{display:flex;align-items:baseline;gap:10px;margin-top:16px;flex-wrap:wrap}
+.price b{font-family:var(--mono);font-weight:600;font-size:30px;color:var(--zhu);letter-spacing:.01em}
+.price small{font-size:12px;font-weight:500;color:var(--muted);font-family:var(--mono);letter-spacing:.08em}
+.course .body{padding:22px 24px 26px;flex:1}
+.kicker{font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:.2em;color:var(--zi);text-transform:uppercase;margin:0 0 12px}
+ul.list{list-style:none;margin:0 0 22px;padding:0}
+ul.list li{position:relative;padding-left:20px;font-size:14.5px;color:var(--ink-2);margin-bottom:9px;line-height:1.8}
+ul.list li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border:1.5px solid var(--zi);transform:rotate(45deg)}
+ul.list li b{color:var(--ink);font-weight:700}
+.meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.meta span{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.06em;color:var(--ink-2);border:1px solid var(--line);border-radius:3px;padding:4px 10px}
+.note{font-size:14px;font-weight:500;color:var(--ink-2);border-left:3px solid var(--zhu);padding-left:14px;margin:20px 0 0}
+
+/* 分行 */
+.branches{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.branches span{
+  font-size:14px;font-weight:500;border:1px solid var(--line);border-radius:999px;
+  padding:8px 17px;background:rgba(255,255,255,.5);
+}
+.branches span em{font-style:normal;font-family:var(--mono);font-weight:600;font-size:10px;color:var(--zhu);letter-spacing:.14em;margin-left:8px}
+
+.band{display:flex;align-items:center;gap:20px;flex-wrap:wrap;border:1px solid var(--line);border-radius:5px;padding:22px 24px;margin-top:32px;background:var(--paper-2)}
+.band .seal{font-family:var(--serif);font-weight:900;font-size:20px;color:var(--paper);background:var(--zhu);border-radius:4px;padding:12px 14px;line-height:1.2;text-align:center;letter-spacing:.08em}
+.band p{margin:0;font-size:14.5px;color:var(--ink-2);max-width:56ch}
+.band p strong{color:var(--ink);font-weight:700}
+
+/* 联系 */
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media(max-width:760px){.contact{grid-template-columns:1fr}}
+.ct{border:1px solid var(--line);border-radius:5px;padding:22px;background:rgba(255,255,255,.5);text-decoration:none;display:block;transition:.25s}
+.ct:hover{border-color:var(--zhu);background:#fff}
+.ct .k{font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:.2em;color:var(--zhu);text-transform:uppercase}
+.ct .v{font-family:var(--mono);font-weight:600;font-size:19px;color:var(--ink);margin-top:8px;word-break:break-word;display:block}
+
+/* 链接 */
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:8px}
+.lk{
+  border:1px solid var(--line);border-radius:5px;padding:18px 20px;background:rgba(255,255,255,.5);
+  text-decoration:none;display:flex;align-items:center;justify-content:space-between;gap:12px;transition:.25s;
+}
+.lk:hover{border-color:var(--zi);background:#fff}
+.lk b{font-family:var(--serif);font-weight:700;font-size:15.5px;letter-spacing:.03em}
+.lk small{display:block;font-family:var(--mono);font-weight:500;font-size:10.5px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:3px}
+.lk i{font-style:normal;color:var(--zi);font-size:17px;flex:0 0 auto}
+
+footer{padding:40px 0 56px;border-top:1px solid var(--line-soft);text-align:center}
+footer .fm{font-family:var(--serif);font-weight:700;font-size:15.5px;letter-spacing:.1em;color:var(--zi);margin:0}
+footer small{display:block;margin-top:9px;font-family:var(--mono);font-weight:500;font-size:11px;color:var(--muted);letter-spacing:.1em}
+
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+:focus-visible{outline:2px solid var(--zi);outline-offset:3px}
+
+
+/* ── 内页专属 ── */
+.pagehead{padding:64px 0 44px;text-align:center}
+.pagehead .kick{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--zhu);margin:0 0 14px}
+.pagehead h1{font-family:var(--serif);font-weight:900;font-size:clamp(30px,5vw,46px);margin:0;letter-spacing:.06em}
+.pagehead .lat{font-family:var(--lat);font-style:italic;font-weight:500;color:var(--muted);font-size:16px;margin:10px 0 0}
+.pagehead .desc{max-width:56ch;margin:20px auto 0;font-size:15.5px;font-weight:500;color:var(--ink-2)}
+.rule{width:56px;height:1px;background:var(--zi);margin:26px auto 0;opacity:.5}
+
+details.qa{border-bottom:1px solid var(--line);background:transparent}
+details.qa summary{
+  display:flex;align-items:flex-start;gap:14px;padding:20px 4px;cursor:pointer;list-style:none;
+  font-family:var(--serif);font-weight:700;font-size:clamp(15.5px,2.2vw,17.5px);line-height:1.65;letter-spacing:.02em;
+}
+details.qa summary::-webkit-details-marker{display:none}
+details.qa summary:hover{color:var(--zhu)}
+details.qa .n{font-family:var(--mono);font-weight:600;font-size:12px;color:var(--zhu);flex:0 0 auto;padding-top:5px;letter-spacing:.06em}
+details.qa .q{flex:1}
+details.qa .ic{flex:0 0 auto;width:18px;height:18px;position:relative;margin-top:6px}
+details.qa .ic::before,details.qa .ic::after{content:"";position:absolute;background:var(--zi);transition:transform .25s}
+details.qa .ic::before{left:0;top:8px;width:18px;height:2px}
+details.qa .ic::after{left:8px;top:0;width:2px;height:18px}
+details.qa[open] .ic::after{transform:scaleY(0)}
+details.qa[open] summary{color:var(--zi)}
+details.qa .ans{padding:0 4px 26px 40px;font-size:15px;color:var(--ink-2);line-height:1.95}
+details.qa .ans p{margin:0 0 14px}
+details.qa .ans p:last-child{margin-bottom:0}
+details.qa .ans ul{margin:0 0 14px;padding-left:0;list-style:none}
+details.qa .ans ul li{position:relative;padding-left:18px;margin-bottom:10px}
+details.qa .ans ul li::before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border:1.5px solid var(--zhu);transform:rotate(45deg)}
+details.qa .ans b{color:var(--ink);font-weight:700}
+details.qa .ans em{font-style:normal;color:var(--zi);font-weight:500}
+@media(max-width:600px){details.qa .ans{padding-left:0}}
+
+.bank{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:24px}
+@media(max-width:880px){.bank{grid-template-columns:1fr}}
+.bank .g{border:1px solid var(--line);border-radius:5px;padding:22px 22px 18px;background:rgba(255,255,255,.46)}
+.bank .g h3{font-family:var(--serif);font-weight:700;font-size:17px;margin:0 0 4px;letter-spacing:.04em}
+.bank .g .cnt{font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:.16em;color:var(--zhu);text-transform:uppercase}
+.bank .g ol{margin:14px 0 0;padding-left:0;list-style:none;counter-reset:q}
+.bank .g ol li{position:relative;padding-left:26px;font-size:14.5px;color:var(--ink-2);margin-bottom:11px;line-height:1.75}
+.bank .g ol li::before{
+  counter-increment:q;content:counter(q,decimal-leading-zero);position:absolute;left:0;top:1px;
+  font-family:var(--mono);font-weight:600;font-size:11px;color:var(--muted);
+}
+.cta{
+  border:1px solid var(--line);border-radius:5px;background:var(--paper-2);
+  padding:30px 28px;margin-top:36px;text-align:center;
+}
+.cta p{margin:0 0 18px;font-size:15.5px;font-weight:500;color:var(--ink-2)}
+.btn{
+  display:inline-block;font-family:var(--sans);font-weight:700;font-size:14.5px;letter-spacing:.06em;
+  text-decoration:none;padding:12px 26px;border-radius:999px;margin:0 5px 8px;transition:.22s;
+}
+.btn.solid{background:var(--zhu);color:var(--paper)}
+.btn.solid:hover{background:#8d2f23}
+.btn.ghost{border:1px solid var(--line);color:var(--ink)}
+.btn.ghost:hover{border-color:var(--zi);color:var(--zi)}
+
+/* ── 罗盘头图 ── */
+.hero-band{position:relative;overflow:hidden;background:#2A100E;isolation:isolate}
+.hero-band .bg{position:absolute;inset:0;background-size:cover;background-position:center 62%;z-index:0}
+.hero-band .ov{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(28,10,9,.88) 0%,rgba(28,10,9,.6) 42%,rgba(28,10,9,.92) 100%)}
+.hero-band .inner{max-width:var(--wrap);margin:0 auto;padding:clamp(48px,9vw,96px) 22px;text-align:center;position:relative;z-index:2}
+.hero-band .zh{font-family:var(--serif);font-weight:900;color:#EBC98A;line-height:1.1;margin:0;
+  font-size:clamp(38px,8vw,72px);letter-spacing:.3em;text-indent:.3em;text-shadow:0 2px 18px rgba(0,0,0,.55)}
+.hero-band .au{font-family:var(--lat);font-weight:600;color:#D9B978;margin:14px 0 0;
+  font-size:clamp(11.5px,2.2vw,16px);letter-spacing:.26em}
+.hero-band .tag{font-family:var(--serif);font-weight:700;color:#F3E6CB;margin:22px 0 0;
+  font-size:clamp(16px,3vw,32px);letter-spacing:.14em;line-height:1.6}
+.hero-band .sub{color:rgba(243,230,203,.74);font-size:clamp(13.5px,2.2vw,15.5px);margin:14px auto 0;
+  max-width:54ch;font-weight:400;line-height:1.85}
+.hero-band .acts{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.hero-band .b1,.hero-band .b2{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;
+  letter-spacing:.08em;padding:12px 26px;border-radius:999px;transition:.22s}
+.hero-band .b1{background:#D9B978;color:#2A100E}
+.hero-band .b1:hover{background:#EBC98A}
+.hero-band .b2{border:1px solid rgba(217,185,120,.55);color:#EBC98A}
+.hero-band .b2:hover{border-color:#EBC98A;background:rgba(217,185,120,.12)}
+.hero-band.slim .inner{padding:clamp(32px,5.5vw,50px) 22px}
+.hero-band.slim .zh{font-size:clamp(26px,5.4vw,42px)}
+
+/* ── 双栏中英 ── */
+.bi{display:grid;grid-template-columns:1fr 1fr;gap:38px}
+@media(max-width:880px){.bi{grid-template-columns:1fr;gap:22px}}
+.bi .en-col{border-left:1px solid var(--line);padding-left:38px}
+@media(max-width:880px){.bi .en-col{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:22px}}
+.bi p{font-size:15.5px;margin:0 0 16px;color:var(--ink-2)}
+.bi p:last-child{margin-bottom:0}
+.bi .en-col p{font-family:var(--lat);font-size:16px;line-height:1.8}
+.bi b{color:var(--ink);font-weight:700}
+.big{font-family:var(--serif);font-weight:900;font-size:clamp(20px,3vw,27px);line-height:1.6;letter-spacing:.03em;color:var(--ink);margin:0 0 20px}
+.en-col .big{font-family:var(--lat);font-style:italic}
+
+/* ── 使命三条 ── */
+.mis{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:880px){.mis{grid-template-columns:1fr}}
+.mis .m{border:1px solid var(--line);border-radius:5px;padding:26px 24px;background:rgba(255,255,255,.46);position:relative;overflow:hidden}
+.mis .m .ini{position:absolute;right:14px;top:4px;font-family:var(--lat);font-weight:600;font-size:60px;color:var(--zi);opacity:.09;line-height:1}
+.mis .m h3{font-family:var(--serif);font-weight:900;font-size:19px;margin:0 0 3px;letter-spacing:.06em}
+.mis .m .sub{font-family:var(--lat);font-style:italic;font-weight:500;font-size:14px;color:var(--zhu);margin:0 0 12px}
+.mis .m p{margin:0;font-size:14.5px;color:var(--ink-2);line-height:1.85}
+.mis .m .p2{font-family:var(--lat);font-size:14.5px;margin-top:12px;padding-top:12px;border-top:1px solid var(--line-soft);color:var(--muted)}
+
+/* ── 纯紫微声明 ── */
+.only{border:1px solid var(--zi);border-radius:5px;padding:26px 28px;background:rgba(76,58,110,.045)}
+.only .t{font-family:var(--serif);font-weight:900;font-size:clamp(18px,2.8vw,23px);letter-spacing:.05em;margin:0 0 10px;color:var(--zi)}
+.only p{margin:0;font-size:15px;color:var(--ink-2);line-height:1.9;max-width:66ch}
+
+/* ── 空间类型图集 ── */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:900px){.gal{grid-template-columns:repeat(2,1fr);gap:14px}}
+@media(max-width:560px){.gal{grid-template-columns:1fr}}
+.gal figure{margin:0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:rgba(255,255,255,.46)}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:var(--paper-3)}
+.gal img.empty{border-bottom:1px dashed var(--line)}
+.gal figcaption{padding:16px 18px 18px}
+.gal .en2{font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.16em;color:var(--zhu);text-transform:uppercase;display:block;margin-bottom:7px}
+.gal .t{font-family:var(--serif);font-weight:700;font-size:16.5px;letter-spacing:.04em;margin:0 0 6px;display:block}
+.gal .d{font-size:13.5px;color:var(--ink-2);line-height:1.8;margin:0}
+
+/* ── 流程 ── */
+.steps{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);border-radius:5px;overflow:hidden;background:rgba(255,255,255,.46)}
+@media(max-width:980px){.steps{grid-template-columns:1fr}}
+.steps .s{padding:24px 22px;border-right:1px solid var(--line)}
+.steps .s:last-child{border-right:none}
+@media(max-width:980px){.steps .s{border-right:none;border-bottom:1px solid var(--line)}.steps .s:last-child{border-bottom:none}}
+.steps .n{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.18em;color:var(--zhu)}
+.steps h3{font-family:var(--serif);font-weight:700;font-size:16.5px;margin:9px 0 8px;letter-spacing:.04em}
+.steps p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.8}
+
+/* ── 创办人（大图） ── */
+.profile{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:clamp(24px,4vw,44px);align-items:start;
+  border:1px solid var(--line);border-radius:5px;padding:clamp(20px,3vw,30px);background:rgba(255,255,255,.46);margin-bottom:18px}
+@media(max-width:820px){.profile{grid-template-columns:1fr;gap:22px}}
+.profile .shot{margin:0}
+.profile .shot img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;background:var(--paper-3);display:block}
+.profile .shot img.empty{border:1px dashed var(--line);background:rgba(255,255,255,.5)}
+.profile .shot figcaption{font-family:var(--mono);font-weight:500;font-size:10px;letter-spacing:.18em;color:var(--muted);text-align:center;padding-top:10px}
+@media(max-width:820px){.profile .shot img{aspect-ratio:1/1;max-height:62vh}}
+.profile .role{font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:.18em;color:var(--zhu);text-transform:uppercase}
+.profile h3{font-family:var(--serif);font-weight:900;font-size:clamp(24px,3.6vw,32px);margin:8px 0 2px;letter-spacing:.05em}
+.profile .lat{font-family:var(--lat);font-style:italic;font-weight:500;color:var(--muted);font-size:15px;margin:0 0 18px}
+.profile p.b{font-size:15.5px;color:var(--ink-2);margin:0 0 14px;line-height:1.9}
+.profile .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.profile .tags span{font-family:var(--mono);font-weight:500;font-size:11px;color:var(--ink-2);border:1px solid var(--line);border-radius:3px;padding:5px 11px}
+
+/* ── 学院合作 ── */
+.partner{display:flex;align-items:center;gap:24px;flex-wrap:wrap;border:1px solid var(--line);border-radius:5px;padding:24px 26px;margin-top:28px;background:var(--paper-2)}
+.partner img{width:96px;height:96px;object-fit:contain;flex:0 0 auto}
+.partner .tx{flex:1;min-width:240px}
+.partner .k{font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:.2em;color:var(--zhu);text-transform:uppercase}
+.partner h3{font-family:var(--serif);font-weight:700;font-size:18px;margin:7px 0 8px;letter-spacing:.04em}
+.partner p{margin:0;font-size:14.5px;color:var(--ink-2);line-height:1.85}
+
+/* ── 文章 ── */
+.article{max-width:70ch;margin:0 auto}
+.article h3{font-family:var(--serif);font-weight:900;font-size:clamp(19px,2.9vw,24px);letter-spacing:.04em;margin:38px 0 14px;color:var(--ink)}
+.article h3.first{margin-top:0}
+.article p{font-size:16px;line-height:2;color:var(--ink-2);margin:0 0 18px}
+.article p b{color:var(--ink);font-weight:700}
+.article .pull{border-left:3px solid var(--zhu);padding:4px 0 4px 20px;margin:26px 0;
+  font-family:var(--serif);font-weight:700;font-size:clamp(17px,2.6vw,20px);line-height:1.75;color:var(--ink)}
+.article ul{list-style:none;margin:0 0 20px;padding:0}
+.article ul li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.9;color:var(--ink-2);margin-bottom:12px}
+.article ul li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border:1.5px solid var(--zi);transform:rotate(45deg)}
+
+
+
+/* ── 隶书补字 ──────────────────────────────────────────────
+   临海隶书有一批字「有编码、没笔画」，浏览器会画成空白且不会自动
+   退回其它字体（安猷的「猷」就是其一）。这里用阿里妈妈刀隶体补上，
+   只针对下面 unicode-range 列出的那几个字生效，其余仍走临海隶书。
+   日后若发现别的字变空白，把它的码位加进 unicode-range 并告诉我补进字库。 */
+@font-face{
+  font-style:normal;font-weight:400;font-display:swap;size-adjust:104%;
+  unicode-range:U+5384,U+5B89,U+5E1B,U+69DF,U+7337,U+7B08,U+8C85,U+8C94;
+  src:url(/fonts/lishu.woff2) format("woff2");
+}
+
+/* ══════════════════════════════════════════════════════════════
+   ▓▓ 改版补丁 ▓▓  色调 · 空间感 · 隶书 · 罗盘格
+   整段放在最后，覆盖上面的旧规则。要还原：整段删掉即可。
+   ══════════════════════════════════════════════════════════════ */
+
+:root{
+  /* ── 纸 & 格子 ────────────────────────────────
+     原本格子是半透明白，压在米白上几乎看不出边界。
+     现在：底色压深一档、格子提到暖白，再加投影 —— 靠亮度差分层 */
+  --paper:#F2EBD9;
+  --paper-2:#FBF5E6;
+  --paper-3:#EFE5CC;
+  --card:#FFFCF3;
+  --card-2:#FDF7E9;
+
+  /* 字色加深，隶书笔画细，浅灰会糊掉 */
+  --ink:#211C11;
+  --ink-2:#3A3122;
+  --muted:#6C6247;
+  --line:rgba(43,37,25,.22);
+  --line-soft:rgba(43,37,25,.12);
+  --lift:0 1px 0 rgba(255,255,255,.75) inset, 0 16px 32px -22px rgba(43,37,25,.6);
+
+  /* ── 罗盘色（与页首头图同一套：深赭底 + 金字）── */
+  --lp-1:#341613;
+  --lp-2:#1C0908;
+  --gold:#EBC98A;
+  --gold-2:#D9B978;
+  --gold-soft:rgba(243,230,203,.82);
+  --gold-line:rgba(217,185,120,.30);
+
+  /* ── 隶书 ────────────────────────────────────
+     拉丁字母走 Spectral / Helvetica（不含中文字形），
+     中文才落到隶书，所以英文版面不受影响。 */
+  --li:"隶补","临海体","LinHaiLiShu","LinHai","LiSu","STLiti","华文隶书","Baoli SC","隶书",serif;
+  --serif:"Spectral",var(--li);
+  --sans:"Helvetica Neue","Segoe UI",Arial,var(--li);
+  --mono:"IBM Plex Mono",ui-monospace,var(--li);
+  /* ↑ 若日后只想标题用隶书、正文回宋体，把上面 --sans 改成：
+     --sans:"Helvetica Neue",Arial,"Noto Serif SC","Songti SC",serif;  */
+}
+
+/* ── 全站呼吸感：行距、字距、字重一起放宽 ───────────── */
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-weight:500;
+  line-height:2.05;
+  letter-spacing:.035em;
+}
+p{letter-spacing:.035em}
+b,strong{font-weight:700;color:var(--ink)}
+section{padding:36px 0}
+.head{margin-bottom:42px;gap:16px}
+.head h2{font-weight:900;letter-spacing:.1em}
+.head .idx{padding:4px 13px;letter-spacing:.16em;border-radius:4px}
+.lead{font-size:17px;font-weight:600;line-height:2.05;color:var(--ink-2);margin-bottom:38px}
+.kicker{letter-spacing:.24em;margin-bottom:16px}
+.note{font-size:15px;font-weight:600;line-height:2;border-left-width:4px;padding-left:16px;margin-top:26px}
+.btn{font-weight:700;letter-spacing:.1em;padding:13px 30px}
+.bar .name{letter-spacing:.14em}
+.bar nav a{font-weight:600;letter-spacing:.06em}
+
+/* ── 米白格子 → 暖白 + 投影，字才浮得起来 ──────────── */
+.card,.mis .m,.bank .g,.ct,.lk,.course,.profile,.portrait,.gal figure{
+  background:var(--card);
+  border-color:var(--line);
+  box-shadow:var(--lift);
+  border-radius:6px;
+}
+.band,.partner,.course .top{background:var(--card-2)}
+.band,.partner{box-shadow:var(--lift);border-radius:6px}
+.branches span{background:var(--card);border-color:var(--line);font-weight:600;padding:9px 19px}
+
+.card{padding:30px 28px}
+.card::before{width:4px;height:58px}
+.card h3{font-size:20px;font-weight:900;letter-spacing:.08em;margin-bottom:14px}
+.card p{font-size:15.5px;font-weight:500;line-height:2;color:var(--ink-2)}
+
+.mis .m{padding:32px 28px}
+.mis .m h3{font-size:20px;letter-spacing:.1em;margin-bottom:5px}
+.mis .m p{font-size:15.5px;font-weight:500;line-height:2}
+
+.course .top{padding:30px 28px 26px}
+.course .body{padding:26px 28px 32px}
+.course h3{letter-spacing:.1em}
+ul.list li{font-size:15.5px;font-weight:500;line-height:2;margin-bottom:13px;padding-left:24px}
+ul.list li::before{top:13px}
+.meta span{font-weight:600}
+
+.bank .g{padding:26px 26px 22px}
+.bank .g h3{font-size:18px;letter-spacing:.08em}
+.bank .g ol li{font-size:15px;font-weight:500;line-height:1.95;margin-bottom:14px}
+
+.ct{padding:26px 24px}
+.lk{padding:20px 22px}
+.lk b{letter-spacing:.08em}
+
+details.qa summary{padding:24px 4px;letter-spacing:.06em;line-height:1.8}
+details.qa .ans{font-size:15.5px;font-weight:500;line-height:2.1;padding-bottom:30px}
+details.qa .ans p{margin-bottom:16px}
+
+.article p{font-size:17px;font-weight:500;line-height:2.2;letter-spacing:.04em;margin-bottom:22px}
+.article h3{letter-spacing:.09em;margin-top:44px}
+.article ul li{font-size:16px;font-weight:500;line-height:2.05}
+.article .pull{letter-spacing:.08em;line-height:1.95;border-left-width:4px;padding-left:22px}
+
+.bi p{font-size:16px;font-weight:500;line-height:2.05;margin-bottom:18px}
+.bi .en-col p{letter-spacing:0}
+.big{letter-spacing:.1em;line-height:1.85;margin-bottom:22px}
+.en-col .big{letter-spacing:0}
+
+.profile{padding:clamp(24px,3vw,34px)}
+.profile h3{letter-spacing:.1em}
+.profile p.b{font-size:16px;font-weight:500;line-height:2.05}
+.profile .tags span{font-weight:600;padding:6px 13px}
+
+/* 十二宫盘（课程页）：格子提亮、字放大 */
+.cell{background:var(--card-2);padding:18px 15px;min-height:128px}
+.cell:hover{background:var(--paper-3)}
+.cell .gong{font-size:19px;letter-spacing:.12em}
+.cell .topic{font-size:13px;font-weight:500;letter-spacing:.06em}
+.core{background:var(--card);padding:34px 26px}
+.core h1,.core h2{letter-spacing:.12em}
+.core .role{font-size:14.5px;font-weight:500;line-height:2}
+.sihua div{font-weight:600;padding:7px 16px}
+
+/* 头图（罗盘）：中文自动变隶书，顺手把字距放开 */
+.hero-band .zh{letter-spacing:.34em;text-indent:.34em}
+.hero-band .tag{letter-spacing:.2em;font-weight:900}
+.hero-band .sub{font-weight:500;line-height:2.05;letter-spacing:.05em}
+.hero-band .b1,.hero-band .b2{letter-spacing:.1em;padding:13px 30px}
+
+/* ══════════════════════════════════════════════════════════════
+   ▓ 罗盘格 ▓  深赭底 + 同心圆纹 + 金字
+   套用于：服务流程 / 先看盘再看屋 / 关于安猷（CTA 黑格）/ 工厂·办公室文字格
+   ══════════════════════════════════════════════════════════════ */
+
+.steps,.only,.cta{
+  border:1px solid var(--gold-line);
+  border-radius:6px;
+  overflow:hidden;
+  color:var(--gold-soft);
+  background-color:var(--lp-2);
+  background-image:
+    radial-gradient(130% 120% at 50% -25%, rgba(217,185,120,.20), transparent 60%),
+    repeating-radial-gradient(circle at 50% 50%, rgba(217,185,120,0) 0 46px, rgba(217,185,120,.055) 46px 47px),
+    linear-gradient(180deg,var(--lp-1) 0%,#26100E 52%,var(--lp-2) 100%);
+  box-shadow:0 22px 46px -26px rgba(28,9,8,.85);
+}
+
+/* 服务流程 */
+.steps .s{padding:32px 26px;border-right:1px solid var(--gold-line)}
+.steps .s:last-child{border-right:none}
+@media(max-width:980px){
+  .steps .s{border-right:none;border-bottom:1px solid var(--gold-line)}
+  .steps .s:last-child{border-bottom:none}
+}
+.steps .n{color:var(--gold-2);font-size:12px;letter-spacing:.22em}
+.steps h3{color:var(--gold);font-size:18px;font-weight:900;letter-spacing:.1em;margin:14px 0 12px}
+.steps p{color:var(--gold-soft);font-size:14.5px;font-weight:500;line-height:2}
+
+/* 先看盘，再看屋 / 一门深入，不混搭 */
+.only{padding:36px 34px}
+.only .t{color:var(--gold);font-size:clamp(21px,3vw,26px);font-weight:900;letter-spacing:.14em;margin-bottom:18px}
+.only p{color:var(--gold-soft);font-size:16px;font-weight:500;line-height:2.15;max-width:70ch}
+.only b,.only strong{color:#F7E9CB;font-weight:700}
+
+/* 关于安猷 / 各页底部黑格 */
+.cta{padding:40px 32px}
+.cta p{color:var(--gold);font-size:17px;font-weight:600;line-height:2.05;margin-bottom:24px}
+.cta b,.cta strong{color:#F7E9CB}
+.cta .btn.solid{background:var(--gold-2);color:#2A100E}
+.cta .btn.solid:hover{background:var(--gold)}
+.cta .btn.ghost{border:1px solid var(--gold-line);color:var(--gold)}
+.cta .btn.ghost:hover{border-color:var(--gold);background:rgba(217,185,120,.14)}
+
+/* 工厂 / 办公室 / 排屋 … 图片下方的文字格 */
+.gal figure{overflow:hidden}
+.gal img.empty{border-bottom:none}
+.gal figcaption{
+  padding:20px 20px 24px;
+  border-top:1px solid var(--gold-line);
+  background-color:var(--lp-2);
+  background-image:
+    radial-gradient(120% 140% at 50% -40%, rgba(217,185,120,.18), transparent 62%),
+    repeating-radial-gradient(circle at 50% 130%, rgba(217,185,120,0) 0 30px, rgba(217,185,120,.05) 30px 31px),
+    linear-gradient(180deg,var(--lp-1) 0%,var(--lp-2) 100%);
+}
+.gal .en2{color:var(--gold-2);letter-spacing:.2em;margin-bottom:9px}
+.gal .t{color:var(--gold);font-size:17.5px;font-weight:900;letter-spacing:.12em;margin-bottom:10px}
+.gal .d{color:var(--gold-soft);font-size:14px;font-weight:500;line-height:2}
+
+/* 手机端稍微收一点内距 */
+@media(max-width:600px){
+  section{padding:36px 0}
+  .card,.mis .m{padding:26px 22px}
+  .only{padding:28px 22px}
+  .cta{padding:32px 22px}
+  .steps .s{padding:26px 22px}
+}
+
+
+/* 顶栏底色跟着新纸色走 */
+.bar{background:rgba(242,235,217,.9)}
+</style>
+<style>
+/* ══ 手机版导览（≤880px）：汉堡选单 ══
+   原本 CSS 在 880px 以下 .bar nav{display:none}，手机上等于没有导览。
+   这一段把它改成可展开的下拉选单，电脑版完全不受影响。 */
+.mbtn{display:none}
+@media(max-width:880px){
+  .mbtn{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:38px;height:34px;margin-left:8px;flex:0 0 auto;
+    border:1px solid var(--line);border-radius:999px;background:transparent;
+    color:var(--zi);font-size:15px;line-height:1;cursor:pointer;padding:0;
+  }
+  .mbtn:active{background:var(--paper-3)}
+  .bar nav{
+    display:flex;flex-direction:column;gap:0;margin:0;
+    position:absolute;top:100%;left:0;right:0;
+    background:rgba(242,235,217,.98);backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line);
+    box-shadow:0 14px 30px -18px rgba(43,37,25,.55);
+    opacity:0;visibility:hidden;transform:translateY(-6px);pointer-events:none;
+    transition:opacity .18s ease,transform .18s ease,visibility .18s;
+  }
+  .bar nav.open{opacity:1;visibility:visible;transform:none;pointer-events:auto}
+  .bar nav a{
+    padding:15px 22px;font-size:15px;letter-spacing:.06em;
+    border-top:1px solid var(--line-soft);
+  }
+  .bar nav a:first-child{border-top:none}
+}
+</style>
+<style>
+/* ══ 统一顶部 letterhead：四页尺寸一致（原本 index 的标语／副标比其它页大）══ */
+.hero-band .inner{padding:clamp(48px,9vw,96px) 22px}
+.hero-band .zh{font-size:clamp(38px,8vw,72px);letter-spacing:.3em;text-indent:.3em;line-height:1.12;margin:0}
+.hero-band .au{font-size:clamp(11.5px,2.2vw,15px);letter-spacing:.24em;margin:14px 0 0}
+.hero-band .tag{font-size:clamp(17px,3vw,30px);letter-spacing:.18em;font-weight:900;margin:22px 0 0}
+.hero-band .sub{font-size:clamp(13.5px,2.2vw,15.5px);letter-spacing:.06em;font-weight:500;line-height:2.05;margin:14px auto 0}
+</style>
+<style>
+/* ══════════════════════════════════════════════════════════
+   2026-09 修订：联系区、关于入口、服务卡、十二宫手机版、对比度
+   这一块放在最后，会覆盖上面的同名规则。
+   ══════════════════════════════════════════════════════════ */
+
+/* 次要文字原本 4.38:1，低于无障碍下限，压深一点 */
+:root{--muted:#726850}
+
+/* 中文页的 kicker 原本用等距英文字体，中文会掉回系统字 */
+html[lang="zh-Hans"] .kicker{font-family:var(--sans)}
+
+/* ── 联系区：标签小字、号码大字；桌面三栏、手机单栏 ── */
+.contact{grid-template-columns:repeat(3,1fr);gap:14px}
+.ct{
+  padding:20px 22px;border-radius:6px;min-height:104px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.ct .k{
+  font-family:var(--mono);font-weight:600;font-size:10.5px;letter-spacing:.2em;
+  color:var(--zhu);text-transform:uppercase;display:block;margin:0;
+}
+.ct .v{
+  font-family:var(--sans);font-weight:600;font-size:17px;letter-spacing:.02em;
+  color:var(--ink);display:block;margin-top:10px;line-height:1.5;
+  word-break:normal;overflow-wrap:anywhere;
+}
+.ct:hover{border-color:var(--zhu);background:#fff}
+@media(max-width:900px){
+  .contact{grid-template-columns:1fr}
+  .ct{min-height:0;padding:18px 20px}
+  .ct .v{font-size:16px}
+}
+
+/* ── 关于安猷入口：整块可点的框 ── */
+.linkcard{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  max-width:430px;margin:34px auto 0;padding:20px 26px;
+  border:1px solid var(--line);border-radius:6px;background:var(--card);
+  box-shadow:var(--lift);text-decoration:none;color:var(--ink);
+  font-family:var(--serif);font-weight:700;font-size:16.5px;letter-spacing:.08em;
+  transition:border-color .22s,color .22s,transform .22s;
+}
+.linkcard::after{content:"\2192";font-family:var(--mono);font-weight:600;transition:transform .22s}
+.linkcard:hover{border-color:var(--zhu);color:var(--zhu);transform:translateY(-2px)}
+.linkcard:hover::after{transform:translateX(4px)}
+@media(max-width:520px){.linkcard{font-size:15px;padding:18px 20px}}
+
+/* ── 三项服务：整张卡可点 ── */
+a.card{
+  display:block;text-decoration:none;color:inherit;position:relative;
+  transition:transform .22s,border-color .22s;
+}
+a.card:hover{transform:translateY(-3px);border-color:var(--zhu)}
+a.card::after{
+  content:"\2192";position:absolute;right:20px;bottom:16px;
+  font-family:var(--mono);font-size:14px;color:var(--zhu);
+  opacity:0;transform:translateX(-6px);transition:.22s;
+}
+a.card:hover::after{opacity:1;transform:none}
+a.card p{margin-bottom:26px}
+
+/* ── 十二宫：手机上维持 4×4 盘面，不再塌成两栏 ── */
+@media(max-width:760px){
+  .chart{grid-template-columns:repeat(4,1fr)}
+  .core{grid-column:2 / span 2;grid-row:2 / span 2;order:0;padding:14px 10px}
+  .cell{min-height:0;padding:10px 7px}
+  .cell .zhi{font-size:9px;letter-spacing:.06em}
+  .cell .gong{font-size:clamp(12.5px,3.5vw,17px);letter-spacing:.02em;margin-top:10px}
+  .cell .topic{font-size:clamp(8.5px,2.4vw,11px);letter-spacing:0;line-height:1.55}
+  .core h1,.core h2{font-size:clamp(16px,4.4vw,24px);margin:0 0 6px}
+  .core .role{font-size:clamp(9.5px,2.5vw,12px);line-height:1.7;margin-top:8px}
+  .core .since{font-size:clamp(8.5px,2.2vw,11px);line-height:1.6}
+}
+
+/* ══ 想试「深棕区块少一点」的版本：在 <body> 加上 class="tone-light" ══
+   只影响服务流程与图集文字格，其余保持不变；不喜欢就把 class 删掉。 */
+body.tone-light .steps,
+body.tone-light .gal figcaption{
+  background-image:none;background-color:var(--card-2);
+  border-color:var(--line);color:var(--ink-2);
+}
+body.tone-light .steps{box-shadow:var(--lift)}
+body.tone-light .steps .s{border-color:var(--line-soft)}
+body.tone-light .steps .n,
+body.tone-light .gal .en2{color:var(--zhu)}
+body.tone-light .steps h3,
+body.tone-light .gal .t{color:var(--ink)}
+body.tone-light .steps p,
+body.tone-light .gal .d{color:var(--ink-2)}
+body.tone-light .gal figcaption{border-top-color:var(--line-soft)}
+</style>
+<style>
+/* ══════════════════════════════════════════════════════════
+   紫金配色（预览用）— 只改色彩变数，版面结构一行没动
+   金为底、紫为墨，取自参考图的色调
+   ══════════════════════════════════════════════════════════ */
+:root{
+  /* 纸面：米白 → 香槟金 */
+  --paper:#EFE2C4;
+  --paper-2:#E8D8B4;
+  --paper-3:#DFCBA0;
+  --card:#F8EFD8;
+  --card-2:#F3E7CA;
+
+  /* 字：褐黑 → 紫黑 */
+  --ink:#241533;
+  --ink-2:#463160;
+  --muted:#6A5878;
+  --line:rgba(36,21,51,.20);
+  --line-soft:rgba(36,21,51,.11);
+
+  /* 重点色：朱红 → 紫 */
+  --zi:#603777;
+  --zhu:#8A3F8F;
+
+  /* 深色区块：深棕 → 深紫 */
+  --lp-1:#2E1740;
+  --lp-2:#180B24;
+  --gold:#E8CE96;
+  --gold-2:#CBA95F;
+  --gold-soft:rgba(240,228,203,.88);
+  --gold-line:rgba(203,169,95,.34);
+
+  --lift:0 1px 0 rgba(255,255,255,.55) inset, 0 16px 32px -22px rgba(36,21,51,.55);
+}
+/* 四化仍用原本的语意色，只压深一点让金底上站得住 */
+:root{ --lu:#2F6B50; --quan:#93355F; --ke:#36508A; --ji:#5B4A74; }
+
+/* 头图遮罩跟着转紫，不然照片压不住 */
+.hero-band .ov{
+  background:linear-gradient(180deg, rgba(24,11,36,.44) 0%, rgba(24,11,36,.20) 45%, rgba(24,11,36,.58) 100%);
+}
+</style>
+</head>
+<body>
+
+<div class="stars" aria-hidden="true">
+  <span>紫微 天府</span><span>天机 太阴</span><span>太阳 贪狼</span><span>武曲 巨门</span>
+  <span>天同 天相</span><span>廉贞 天梁</span><span>七杀 破军</span>
+</div>
+
+<header class="bar">
+  <div class="wrap">
+    <a href="index.html" class="name" style="text-decoration:none">安猷 A&amp;U</a>
+    <nav>
+      <a href="index.html">首页</a>
+      <a href="index.html#fengshui">风水服务</a>
+      <a href="courses_cn.html">课程</a>
+      <a href="faq_cn.html"style="color:var(--zhu)">常见问题</a>
+      <a href="about_cn.html">关于安猷</a>
+	<a href="index.html#contact">联系</a>
+    </nav>
+    <button class="lang" id="langBtn" type="button" onclick="window.location.href='faq_en.html'">EN</button>
+    <button class="mbtn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+
+</header>
+
+<!-- ══ 头图（罗盘）：要换图就替换 images/hero-compass.jpg ══ -->
+<div class="hero-band">
+  <div class="bg" style="background-image:url(/images/bg-2-stars.jpg)"></div>
+  <div class="ov"></div>
+  <div class="inner"> 
+    <p class="zh">安猷玄学咨询</p>
+    <p class="au">A &amp; U　METAPHYSICS SOLUTIONS</p>
+    <h1 class="tag">常见问题与解答</h1>
+    <p class="sub">十问十答，以及特别状况、在盘上才谈得清楚的问题。</p>
+  </div>
+</div>
+
+<section class="reveal" style="border-top:none;padding-top:64px">
+  <div class="wrap">
+    <div class="head"><span class="idx">1</span><h2>十问十答</h2><span class="en">Answered in full</span></div>
+    <details class="qa">
+      <summary><span class="n">01</span><span class="q">命理到底是统计学还是迷信？有没有科学依据？</span><span class="ic"></span></summary>
+      <div class="ans"><p>现代科学的发展，根植于对不同数值与参数进行组合研究，在通过大量可重复的实证核实后，总结出客观规律。命理学确实有其相似的实证诉求，在历史发展中也不断经历着经验的考证与核实。</p><p>但人生的轨迹无法像科学实验那样在控制变量的环境下重新来过。因此，命理能在<b>大方向上勾勒趋势</b>；而人生故事最终的走向与完整性，则会因后天环境与个人选择的不同，产生相应的变化。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">02</span><span class="q">同年同月同日同时出生的人那么多，为什么命运差别那么大？</span><span class="ic"></span></summary>
+      <div class="ans"><p>同一棵树上产出的种子，当它们落在不同的地方，又会因为哪些因素的影响，导致最终生长的速度与姿态有所不同？</p><p>只要能真正参透影响种子际遇的核心因果，这个问题的答案也就同样获得了解释。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">03</span><span class="q">命说得准，是不是只是巴纳姆效应（人人都能对号入座）？</span><span class="ic"></span></summary>
+      <div class="ans"><p>判断「算得准」究竟源于巴纳姆效应，还是命理本身的推演，关键在于分辨你听到的结论，究竟是人类共有的普遍心理特征，还是针对独立个体的特定事件。可以用两种说法的差异来区分：</p><p><b>心理共性描述：</b>「你总觉得自己才华被低估，内心深处有一种不被理解的孤独感，你需要真正认清自己想要什么。」——这属于心理学上的宽泛共性，并非命理推演的实质内容。</p><p><b>特定事件预测：</b>「你在 2025 年容易遭遇破财，且起因与女性相关。」——这是命理对特定时空的事件预测。具体的故事发展有多种演变可能，但「因女性导致破财」的核心方向是具体而明确的。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">04</span><span class="q">不同师傅看同一个盘，为什么结论可以完全相反？</span><span class="ic"></span></summary>
+      <div class="ans"><p>通常存在三种可能性：</p><ul><li><b>能力的局限</b>——你可能遇到了缺乏实学的人。这类人往往过度依赖心理学技巧（如冷读、察言观色）来模糊作答，而非真正运用命理系统去推算具体事件。</li><li><b>视角的偏差</b>——不同命理师分析同一张盘时，着眼点与权重比例有所不同。以自主创业为例：面对「官强财弱」的盘，一位可能重点看「官强」，认为其业务繁多、企业运转忙碌；另一位则可能重点看「财弱」，认为其虽忙碌但收入微薄、甚至面临亏损。求测者听起来，就是截然相反的结论。</li><li><b>操作的失误</b>——时辰核对不准、真太阳时换算错误或主观疏忽，导致其中一方排错了盘，自然推导出完全错误的结论。</li></ul></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">05</span><span class="q">紫微斗数、八字、占星、塔罗，哪个更准？可以交叉验证吗？</span><span class="ic"></span></summary>
+      <div class="ans"><p>各门派的工具属性和应用边界有所不同。但从本质上讲，只要推算者真正掌握了正确的逻辑与系统——无论是八字、紫微、占星还是塔罗——在针对<b>同一件特定事务</b>的吉凶趋势判断上，其推导出的核心方向基本上会是一致的。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">06</span><span class="q">命理能验证吗？有没有「算错」的标准？</span><span class="ic"></span></summary>
+      <div class="ans"><p>即便严谨如现代科学，在发展中也会经历理论的更迭与推翻，何况是作为古老经验科学的命理系统。</p><p>命理的准确度确实可以接受考验，验证标准通常建立在对<b>过去既定事实大方向</b>的复盘：如果能准确断出过往人生的重要事件，便说明系统运转正常。</p><p>但要求它百分之百还原所有故事细节，是无法做到的。命理揭示的是趋势与大方向，并非绝对的宿命论——后天的选择与环境，依然在实时影响细节。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">07</span><span class="q">命理只适用于华人吗？外国人排紫微命盘有效吗？</span><span class="ic"></span></summary>
+      <div class="ans"><p>何为命理系统？本质上，它是一套用来推算、解构「生命体」时空运行轨迹的工具，适用对象是有生命规律的个体，并不局限于特定的种族、国籍或文化标签。</p><p>同样的，外国人也可以用紫微斗数推算自己的生命轨迹与事件。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">08</span><span class="q">如果命是注定的，努力还有意义吗？</span><span class="ic"></span></summary>
+      <div class="ans"><p>苹果树的种子，DNA 注定了它未来只能长成苹果树，无法变成其他物种；它本身没有主观意识，只能被动接受命运的安排。</p><p>而人类拥有<b>自主选择的能力</b>——差别就在这里。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">09</span><span class="q">知道了结果反而产生心理暗示，是不是自己把结局做实了？</span><span class="ic"></span></summary>
+      <div class="ans"><p>在命理学中，特定时空节点所呈现的事件，有其固定的大方向；即使你事先一无所知，这个大方向依然会如期发生。</p><p>然而人们所谓的「结局」，往往是自己根据已知信息在脑海中预设的剧本。会不会因为心理暗示而把结局做实，关键在于得知这个大方向之后，自己是否<em>起了心、动了念</em>。</p></div>
+    </details>
+    <details class="qa">
+      <summary><span class="n">10</span><span class="q">「知命」和「认命」的区别在哪里？</span><span class="ic"></span></summary>
+      <div class="ans"><p>现实中，我们大多数人连「知命」都还做不到。很多人只是顺从社会的影响，根据统计数据去追逐所谓「最吃香」的行业或「最易成功」的标准。参考社会趋势有其必要，但每个人都有自身独立的命运轨迹，又怎么可能人人相同？</p><p><b>知命</b>：清晰了解自己这具生命体的本质属性与核心基因。如果你是一条鱼，就应该明白自己必须把时间花在打磨游泳技巧与耐力上，而不是盲目跟风去练习爬树。</p><p><b>认命</b>：是当你看清自己是一条鱼之后，能够心甘情愿、脚踏实地地下水去练。</p><p>所谓「知」，是知道属于自己的赛道；所谓「认」，是锚定赛道后，全力以赴地接纳并践行属于自己的功课。</p></div>
+    </details>
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="wrap">
+    <div class="head"><span class="idx">2</span><h2>课堂与咨询中拆解的问题</h2><span class="en">Worked through case by case</span></div>
+    <p class="lead">每一个问题，都会有答案。列在这里，是让你知道实际会处理到哪些范围。</p>
+    <div class="bank">
+      <div class="g">
+        <span class="cnt">4 QUESTIONS</span>
+        <h3>命运、改运与禁忌</h3>
+        <ol><li>命理能算出寿命和生死吗？为什么很多师傅不肯说？</li><li>一生可以算几次？算太多会不会不准或损福？</li><li>「泄露天机」是真的吗？师傅会因此折寿？</li><li>已经算出来的坏事，到底能不能改？改到什么程度？</li></ol>
+      </div>
+      <div class="g">
+        <span class="cnt">8 QUESTIONS</span>
+        <h3>排盘技术性疑问</h3>
+        <ol><li>出生时间家里人记不清、医院记录有误，怎么定盘？</li><li>要不要换算真太阳时？跨时区、夏令时怎么处理？</li><li>南半球出生的人，排盘规则要不要调整？</li><li>以农历、公历还是节气为准？新年从立春算还是正月初一？</li><li>剖腹产择日出生的孩子，命盘算不算数？</li><li>试管婴儿、早产儿的命盘准吗？</li><li>大限十年一换，是生日当天立刻切换吗？交运期怎么算？</li></ol>
+      </div>
+      <div class="g">
+        <span class="cnt">6 QUESTIONS</span>
+        <h3>五行、改运与命名</h3>
+        <ol><li>「五行缺什么就补什么」这个说法对不对？五行局又是什么？</li><li>什么是用神？为什么各家取用神方法不同？</li><li>改名字真能改运吗？多久生效？身份证没改算不算数？</li><li>戴水晶、貔貅、开运物、放生、拜太岁，实际作用有多大？</li><li>犯太岁一定会出事吗？非安不可吗？</li><li>改运的成本和效果怎么衡量？花大钱化解合理吗？</li></ol>
+      </div>
+      <div class="g">
+        <span class="cnt">5 QUESTIONS</span>
+        <h3>感情、婚姻、家庭</h3>
+        <ol><li>正缘什么时候出现？可以催吗？</li><li>双方命盘合不来，就真的不能在一起吗？</li><li>同性伴侣、离婚再婚，传统合婚理论还适用吗？</li><li>命中显示的子女数，和现代选择不生育怎么调和？</li><li>父母的命盘会决定小孩的命运吗？</li></ol>
+      </div>
+      <div class="g">
+        <span class="cnt">6 QUESTIONS</span>
+        <h3>事业、财富、健康</h3>
+        <ol><li>为什么我的命盘看起来不错，现实却很普通？</li><li>命理能算出适合的行业和职位吗？能精确到什么程度？</li><li>能不能用命理算股票、加密货币、彩票、赌博？</li><li>命盘能看出疾病吗？能取代体检和医生吗？</li><li>打工和创业，命理真的能给出答案吗？</li><li>财帛宫漂亮、禄入财宫，为什么还是存不到钱？</li></ol>
+      </div>
+      <div class="g">
+        <span class="cnt">8 QUESTIONS</span>
+        <h3>风水（现代居住场景）</h3>
+        <ol><li>现代公寓高楼没有明确坐向，风水怎么看？</li><li>租来的房子不能改动，还有调整空间吗？</li><li>开门见厕、横梁压顶、镜子对床，这些网络禁忌有多少是真的？</li><li>房子风水重要还是本人命盘重要？两者冲突以谁为主？</li><li>只有一张办公桌的空间，布局有意义吗？</li><li>风水调整后多久见效？怎么判断有没有效？</li><li>家里有人运势特别差，是房子的问题还是他本人的问题？</li><li>现在多数人火化、进灵骨塔，阴宅风水还有影响吗？</li></ol>
+      </div>
+     </div>
+
+    <div class="cta">
+      <p>以上问题将在课堂上提供详解，欢迎联系查询课程详情</p>
+      <a class="btn solid" href="https://wa.me/60124133622?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E7%9C%8B%E4%BA%86%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%EF%BC%8C%E6%83%B3%E5%86%8D%E9%97%AE%E4%B8%80%E9%A2%98%E3%80%82">WhatsApp 联系</a>
+      <a class="btn ghost" href="courses_cn.html#courses">查看课程</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="fm">安猷 A&amp;U Metaphysics Solutions</p>
+    <small>Copyright @2026 A&U Metaphysics Solutions. All rights reserved.</small>
+  </div>
+</footer>
+
+<script>
+/* 语言切换已改成直接跳转 *_en.html，原本的 data-en 就地切换脚本已移除 */
+(function(){
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+})();
+</script>
+<script>
+/* ── 来源追踪：网址带 ?src=xxx 时，把来源附在 WhatsApp 预填讯息末尾 ──
+   例：fengshui.html?src=fb-nov  →  客人送出的讯息尾端会多一行 [fb-nov]
+   不想要就把这一整段删掉 ── */
+(function(){
+  var src=new URLSearchParams(location.search).get('src');
+  if(!src) return;
+  src=src.replace(/[^\w\-]/g,'').slice(0,24);
+  if(!src) return;
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){
+    try{
+      var u=new URL(a.href);
+      var t=u.searchParams.get('text')||'';
+      u.searchParams.set('text', t+'\n['+src+']');
+      a.href=u.toString();
+    }catch(e){}
+  });
+})();
+</script>
+<script>
+/* 手机版汉堡选单 */
+(function(){
+  var b=document.getElementById('menuBtn'), n=document.querySelector('.bar nav');
+  if(!b||!n) return;
+  b.addEventListener('click',function(e){
+    e.stopPropagation();
+    var open=n.classList.toggle('open');
+    b.setAttribute('aria-expanded',open?'true':'false');
+  });
+  n.addEventListener('click',function(e){ if(e.target.closest('a')) n.classList.remove('open'); });
+  document.addEventListener('click',function(e){
+    if(!n.contains(e.target) && !b.contains(e.target)) n.classList.remove('open');
+  });
+})();
+</script>
+</body>
+</html>
