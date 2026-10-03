@@ -500,3 +500,8 @@ section.intro{padding:56px 0}
 .media.one img{aspect-ratio:auto;height:auto;object-fit:contain}
 .steps + .media,.grid3 + .media{margin-top:26px}
 .media + .only{margin-top:36px}
+
+/* 紫微阳宅风水页 */
+.grid3.six{row-gap:18px}
+.card a,.article a{color:var(--zi);font-weight:600}
+.article + .media{margin-top:26px}

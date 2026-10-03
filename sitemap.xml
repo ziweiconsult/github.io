@@ -16,6 +16,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my"/>
   </url>
   <url>
+    <loc>https://anumetaphysics.com.my/fengshui_cn.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/fengshui_cn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/fengshui_en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/fengshui_cn.html"/>
+  </url>
+  <url>
+    <loc>https://anumetaphysics.com.my/fengshui_en.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/fengshui_cn.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://anumetaphysics.com.my/fengshui_en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://anumetaphysics.com.my/fengshui_cn.html"/>
+  </url>
+  <url>
     <loc>https://anumetaphysics.com.my/ziwei_cn.html</loc>
     <lastmod>2026-10-03</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://anumetaphysics.com.my/ziwei_cn.html"/>
