@@ -491,3 +491,12 @@ section.intro{padding:56px 0}
 .only + .kicker{margin-top:38px}
 .only + .lead{margin:40px auto 30px}
 @media(max-width:420px){.nm-x{display:none}}
+
+/* 实地照片／上课照片／命盘示例：照片上传到 images/ 才会出现 */
+.media.three figure{flex-basis:calc(33.333% - 12px)}
+@media(max-width:760px){.media.three figure{flex-basis:calc(50% - 9px)}}
+@media(max-width:520px){.media.three figure{flex-basis:100%}}
+.media.one figure{flex-basis:760px;max-width:100%}
+.media.one img{aspect-ratio:auto;height:auto;object-fit:contain}
+.steps + .media,.grid3 + .media{margin-top:26px}
+.media + .only{margin-top:36px}
