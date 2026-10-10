@@ -505,3 +505,49 @@ section.intro{padding:56px 0}
 .grid3.six{row-gap:18px}
 .card a,.article a{color:var(--zi);font-weight:600}
 .article + .media{margin-top:26px}
+
+/* ══ 紫旨点点专栏（2026-10-10） ══ */
+.post-sec{padding:28px 0 72px}
+.crumbs{max-width:760px;margin:0 auto 18px;font-size:13.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.crumbs a{color:var(--muted);text-decoration:none}
+.crumbs a:hover{color:var(--zi)}
+.post{max-width:760px;margin:0 auto;font-size:17px;line-height:2;color:var(--ink-2)}
+.post .meta{font-size:14px;color:var(--muted);margin:0 0 22px}
+.post h2{font-family:var(--serif);font-weight:900;color:var(--zi-deep);font-size:clamp(21px,2.8vw,25px);letter-spacing:.05em;line-height:1.45;margin:44px 0 14px}
+.post p{margin:0 0 18px}
+.post ul{margin:0 0 20px;padding-left:1.3em}
+.post li{margin:0 0 8px}
+.post blockquote{margin:28px 0;padding:22px 0;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);text-align:center}
+.post blockquote p{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(18px,2.4vw,21px);color:var(--zi);line-height:1.8;text-wrap:balance}
+.answer{background:var(--card);border:1px solid var(--gold);border-radius:12px;padding:20px 22px 18px;margin:0 0 10px;box-shadow:var(--shadow)}
+.answer .lb{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.2em;color:#fff;background:var(--zi);border-radius:999px;padding:2px 12px;margin-bottom:10px}
+.answer p{margin:0;font-size:17px;font-weight:500;color:var(--ink);line-height:1.95}
+.author{display:flex;gap:18px;align-items:flex-start;margin:48px 0 0;padding:22px 0 0;border-top:1px solid var(--line)}
+.author .media{display:block;flex:0 0 72px;gap:0}
+.author .media figure{flex:none;margin:0;width:72px;height:72px;max-width:none;padding:0;border:none;border-radius:50%;box-shadow:none;overflow:hidden;background:var(--tint)}
+.author .media img{width:72px;height:72px;aspect-ratio:1/1;object-fit:cover;object-position:center 20%}
+.author .at p{margin:0 0 6px;font-size:15px;line-height:1.8}
+.author .an{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--zi-deep)}
+.author .an span{display:block;font-family:var(--sans);font-weight:500;font-size:13.5px;color:var(--muted)}
+.author .al{display:flex;flex-wrap:wrap;gap:6px 18px}
+.post-sec .sec-cta{max-width:760px;margin:40px auto 0}
+.related{max-width:760px;margin:44px auto 0}
+.related h2{font-family:var(--serif);font-weight:900;color:var(--zi-deep);font-size:21px;letter-spacing:.06em;margin:0 0 12px}
+.related ul{margin:0 0 12px;padding-left:1.2em}
+.related li{margin:0 0 8px;font-size:16px}
+.related .all{font-size:15px;margin:0}
+.zl-g{font-family:var(--serif);font-weight:700;font-size:18px;color:var(--gold-dk);letter-spacing:.12em;margin:30px 0 14px}
+.zl-g:first-of-type{margin-top:0}
+.zl-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.zl-card{display:flex;flex-direction:column;gap:6px;padding:20px 22px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);text-decoration:none;color:var(--ink-2);box-shadow:var(--shadow);transition:border-color .2s,transform .2s}
+.zl-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.zl-card .d{font-size:12.5px;font-weight:600;letter-spacing:.08em;color:var(--muted)}
+.zl-card .t{font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.55;color:var(--zi-deep)}
+.zl-card .s{font-size:14.5px;line-height:1.85}
+@media (max-width:720px){
+  .zl-list{grid-template-columns:1fr}
+  .post{font-size:16.5px}
+  .answer{padding:18px 18px 16px}
+  .author{gap:14px}
+}
+@media (prefers-reduced-motion:reduce){.zl-card{transition:none}.zl-card:hover{transform:none}}
